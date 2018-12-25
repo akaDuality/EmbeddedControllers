@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lmz-vi-VuD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="JeI-a0-1T3">
+            <objects>
+                <viewController id="Lmz-vi-VuD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFW-h1-fH9" customClass="ModalContainerView" customModule="EmbeddedControllers" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlc-Gd-Eqr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="O5d-Nd-frL" kind="embed" id="znh-Mw-M6A"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQX-H7-BNa">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <accessibility key="accessibilityConfiguration" label="Закрыть"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fQX-H7-BNa" secondAttribute="height" multiplier="1:1" id="Z9u-wS-wlV"/>
+                                    <constraint firstAttribute="width" constant="60" id="yKU-dW-1fQ"/>
+                                </constraints>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="closeDidPress:" destination="Lmz-vi-VuD" eventType="touchUpInside" id="2fl-8j-pW9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tlc-Gd-Eqr" firstAttribute="top" secondItem="nFW-h1-fH9" secondAttribute="top" id="3jC-1v-wqw"/>
+                            <constraint firstAttribute="bottom" secondItem="tlc-Gd-Eqr" secondAttribute="bottom" id="BEH-nS-h43"/>
+                            <constraint firstItem="X3e-Pp-y2J" firstAttribute="trailing" secondItem="tlc-Gd-Eqr" secondAttribute="trailing" id="H4b-ic-1yN"/>
+                            <constraint firstItem="tlc-Gd-Eqr" firstAttribute="leading" secondItem="X3e-Pp-y2J" secondAttribute="leading" id="an2-he-aFl"/>
+                            <constraint firstItem="fQX-H7-BNa" firstAttribute="top" secondItem="nFW-h1-fH9" secondAttribute="top" id="m7c-D0-G65"/>
+                            <constraint firstItem="fQX-H7-BNa" firstAttribute="leading" secondItem="nFW-h1-fH9" secondAttribute="leading" id="tAZ-Zj-XBl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X3e-Pp-y2J"/>
+                        <connections>
+                            <outlet property="closeButton" destination="fQX-H7-BNa" id="qtR-5H-gpA"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Opl-MV-GWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="73"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mXS-F0-I8p">
+            <objects>
+                <viewController id="O5d-Nd-frL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PAE-Om-BiB" customClass="OnboardingView" customModule="EmbeddedControllers" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-cb-e9R">
+                                <rect key="frame" x="16" y="0.0" width="343" height="591"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="410" translatesAutoresizingMaskIntoConstraints="NO" id="Qud-Cy-rvq">
+                                        <rect key="frame" x="0.0" y="90.5" width="343" height="410"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="A3O-dj-M7e" kind="embed" id="eRH-ky-BMf"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Qud-Cy-rvq" firstAttribute="centerY" secondItem="CFT-cb-e9R" secondAttribute="centerY" id="2ik-XG-vmn"/>
+                                    <constraint firstItem="Qud-Cy-rvq" firstAttribute="centerX" secondItem="CFT-cb-e9R" secondAttribute="centerXWithinMargins" id="ILQ-PY-j1U"/>
+                                    <constraint firstAttribute="leading" secondItem="Qud-Cy-rvq" secondAttribute="leading" id="fCk-SZ-7eG"/>
+                                    <constraint firstItem="Qud-Cy-rvq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="CFT-cb-e9R" secondAttribute="top" constant="20" id="ik0-Rk-DxB"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="48" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8XG-VJ-Rrf">
+                                <rect key="frame" x="16" y="599" width="343" height="48"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CFT-cb-e9R" firstAttribute="top" secondItem="PAE-Om-BiB" secondAttribute="top" id="1Wu-Yo-JPI"/>
+                            <constraint firstItem="8XG-VJ-Rrf" firstAttribute="centerX" secondItem="CFT-cb-e9R" secondAttribute="centerX" id="8dB-01-tw6"/>
+                            <constraint firstItem="8XG-VJ-Rrf" firstAttribute="leading" secondItem="CFT-cb-e9R" secondAttribute="leading" id="Tfy-mm-n9k"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CFT-cb-e9R" secondAttribute="leading" id="XwH-oD-SeC"/>
+                            <constraint firstItem="yVc-dO-mW4" firstAttribute="bottom" secondItem="8XG-VJ-Rrf" secondAttribute="bottom" priority="750" id="c0t-vH-O9c"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8XG-VJ-Rrf" secondAttribute="bottom" constant="20" id="cKw-u5-ZlQ"/>
+                            <constraint firstItem="8XG-VJ-Rrf" firstAttribute="top" secondItem="CFT-cb-e9R" secondAttribute="bottom" constant="8" id="iRS-wN-GAk"/>
+                            <constraint firstItem="CFT-cb-e9R" firstAttribute="centerX" secondItem="PAE-Om-BiB" secondAttribute="centerXWithinMargins" id="xF8-ds-nAl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yVc-dO-mW4"/>
+                        <connections>
+                            <outlet property="contentContainerView" destination="Qud-Cy-rvq" id="ezN-kf-OvT"/>
+                            <outlet property="stackView" destination="8XG-VJ-Rrf" id="ktL-DU-CAD"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSl-SZ-AjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="74"/>
+        </scene>
+        <!--New Year Content View Controller-->
+        <scene sceneID="rFn-Re-EsI">
+            <objects>
+                <viewController id="A3O-dj-M7e" customClass="NewYearContentViewController" customModule="EmbeddedControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2dq-9F-Yyw" customClass="NewYearContentView" customModule="EmbeddedControllers" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="LBb-5e-Zuu">
+                                <rect key="frame" x="22" y="0.0" width="276" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Короткий день в Новый год" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9y-hD-eX6">
+                                <rect key="frame" x="45.5" y="245" width="229.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 декабря работаем до 18:00. Наши ребята тоже отмечают Новый год!  Продолжим радовать вас пиццей 1 января в 12:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU1-sX-DDJ">
+                                <rect key="frame" x="0.0" y="269.5" width="320" height="130.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dU1-sX-DDJ" firstAttribute="leading" secondItem="2dq-9F-Yyw" secondAttribute="leading" id="1mU-G6-Yfl"/>
+                            <constraint firstAttribute="bottom" secondItem="dU1-sX-DDJ" secondAttribute="bottom" id="5HA-Q2-BwJ"/>
+                            <constraint firstItem="k9y-hD-eX6" firstAttribute="top" secondItem="LBb-5e-Zuu" secondAttribute="bottom" constant="20" id="GbQ-uo-owM"/>
+                            <constraint firstItem="k9y-hD-eX6" firstAttribute="centerX" secondItem="LBb-5e-Zuu" secondAttribute="centerX" id="SJL-tK-kVA"/>
+                            <constraint firstItem="dU1-sX-DDJ" firstAttribute="top" secondItem="k9y-hD-eX6" secondAttribute="bottom" constant="4" id="WVk-pK-Lfm"/>
+                            <constraint firstItem="LBb-5e-Zuu" firstAttribute="centerX" secondItem="2dq-9F-Yyw" secondAttribute="centerXWithinMargins" id="b5J-1U-3PI"/>
+                            <constraint firstItem="dU1-sX-DDJ" firstAttribute="centerX" secondItem="k9y-hD-eX6" secondAttribute="centerX" id="h3C-DM-hH9"/>
+                            <constraint firstItem="LBb-5e-Zuu" firstAttribute="top" secondItem="2dq-9F-Yyw" secondAttribute="topMargin" id="jPd-5e-ueV"/>
+                            <constraint firstItem="k9y-hD-eX6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2dq-9F-Yyw" secondAttribute="leadingMargin" id="z7m-Bt-bo3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fWf-SP-B7j"/>
+                        <connections>
+                            <outlet property="bodyLabel" destination="dU1-sX-DDJ" id="HdP-VH-EGJ"/>
+                            <outlet property="doneButton" destination="aif-i3-gjD" id="Qhh-6j-rAK"/>
+                            <outlet property="imageView" destination="LBb-5e-Zuu" id="gWV-Dd-fwO"/>
+                            <outlet property="titleLabel" destination="k9y-hD-eX6" id="GZr-pF-SHZ"/>
+                        </connections>
+                    </view>
+                    <size key="freeformSize" width="320" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dap-IR-deA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aif-i3-gjD">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="70p-gy-fd9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <state key="normal" title="Ага, понятно" backgroundImage="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonDidPress:" destination="A3O-dj-M7e" eventType="touchUpInside" id="7Uy-Sa-ii7"/>
+                    </connections>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="1394" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="37" height="48"/>
+        <image name="Close" width="28" height="28"/>
+        <image name="image" width="276" height="245"/>
+    </resources>
+</document>

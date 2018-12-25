@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bGT-AU-ptF">
+            <objects>
+                <viewController id="ydZ-sg-1GR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XGN-qP-cqz" customClass="ModalContainerView" customModule="EmbeddedControllers" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-fe-8uP" userLabel="Content">
+                                <rect key="frame" x="16" y="20" width="343" height="571"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2k-cM-JQc" userLabel="Center aligned view">
+                                        <rect key="frame" x="0.0" y="76.5" width="343" height="418"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-OJ-rSN" userLabel="illustration">
+                                                <rect key="frame" x="42" y="20" width="259" height="245"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Короткий день в Новый год" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jQ-fd-0BI" userLabel="title">
+                                                <rect key="frame" x="57" y="285" width="229.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 декабря работаем до 18:00. Наши ребята тоже отмечают Новый год!  Продолжим радовать вас пиццей 1 января в 12:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzb-YS-Icr" userLabel="body">
+                                                <rect key="frame" x="0.0" y="309.5" width="343" height="108.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="6jQ-fd-0BI" firstAttribute="top" secondItem="AFd-OJ-rSN" secondAttribute="bottom" constant="20" id="4xK-qn-KwZ"/>
+                                            <constraint firstItem="AFd-OJ-rSN" firstAttribute="leading" secondItem="G2k-cM-JQc" secondAttribute="leading" constant="42" id="CSl-ex-z8Y"/>
+                                            <constraint firstItem="AFd-OJ-rSN" firstAttribute="centerX" secondItem="G2k-cM-JQc" secondAttribute="centerXWithinMargins" id="IdD-YR-Kex"/>
+                                            <constraint firstItem="6jQ-fd-0BI" firstAttribute="centerX" secondItem="AFd-OJ-rSN" secondAttribute="centerX" id="RCm-3H-X9z"/>
+                                            <constraint firstAttribute="bottom" secondItem="rzb-YS-Icr" secondAttribute="bottom" id="eY3-gb-7iE"/>
+                                            <constraint firstItem="rzb-YS-Icr" firstAttribute="top" secondItem="6jQ-fd-0BI" secondAttribute="bottom" constant="4" id="gct-ab-PgO"/>
+                                            <constraint firstItem="rzb-YS-Icr" firstAttribute="leading" secondItem="G2k-cM-JQc" secondAttribute="leading" id="k0w-dS-gWa"/>
+                                            <constraint firstItem="rzb-YS-Icr" firstAttribute="centerX" secondItem="6jQ-fd-0BI" secondAttribute="centerX" id="nHq-WG-XXx"/>
+                                            <constraint firstItem="AFd-OJ-rSN" firstAttribute="top" secondItem="G2k-cM-JQc" secondAttribute="topMargin" constant="12" id="slj-7j-9BX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="G2k-cM-JQc" firstAttribute="centerX" secondItem="Jn8-fe-8uP" secondAttribute="centerX" id="0fq-uO-qk3"/>
+                                    <constraint firstItem="G2k-cM-JQc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Jn8-fe-8uP" secondAttribute="top" id="Qmt-JT-6Y3"/>
+                                    <constraint firstItem="G2k-cM-JQc" firstAttribute="centerY" secondItem="Jn8-fe-8uP" secondAttribute="centerY" id="caE-9V-MtP"/>
+                                    <constraint firstItem="G2k-cM-JQc" firstAttribute="leading" secondItem="Jn8-fe-8uP" secondAttribute="leading" id="lwQ-88-DuL"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-L1-SGP">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <accessibility key="accessibilityConfiguration" label="Закрыть"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EqC-L1-SGP" secondAttribute="height" multiplier="1:1" id="ZwG-mG-65H"/>
+                                    <constraint firstAttribute="width" constant="60" id="aH6-M4-HvS"/>
+                                </constraints>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="closeDidPress:" destination="ydZ-sg-1GR" eventType="touchUpInside" id="oam-ky-rxY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9w-CJ-b81" userLabel="Done button" customClass="GradientButton" customModule="EmbeddedControllers" customModuleProvider="target">
+                                <rect key="frame" x="16" y="599" width="343" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="S2X-pF-ljg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="Ага, понятно" backgroundImage="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q9w-CJ-b81" firstAttribute="top" secondItem="Jn8-fe-8uP" secondAttribute="bottom" constant="8" id="6pv-Oz-Wcx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Jn8-fe-8uP" secondAttribute="leading" id="BTJ-1P-xmN"/>
+                            <constraint firstItem="Q9w-CJ-b81" firstAttribute="centerX" secondItem="XGN-qP-cqz" secondAttribute="centerXWithinMargins" id="Kul-Jb-i5P"/>
+                            <constraint firstItem="Jn8-fe-8uP" firstAttribute="centerX" secondItem="XGN-qP-cqz" secondAttribute="centerXWithinMargins" id="LCZ-nT-rOu"/>
+                            <constraint firstItem="8xu-tR-Xqf" firstAttribute="top" secondItem="Jn8-fe-8uP" secondAttribute="top" id="Xjn-Ui-Wa7"/>
+                            <constraint firstItem="Q9w-CJ-b81" firstAttribute="leading" secondItem="XGN-qP-cqz" secondAttribute="leadingMargin" id="cfO-bM-VXc"/>
+                            <constraint firstItem="EqC-L1-SGP" firstAttribute="top" secondItem="XGN-qP-cqz" secondAttribute="top" id="e6b-aE-u7W"/>
+                            <constraint firstItem="EqC-L1-SGP" firstAttribute="leading" secondItem="XGN-qP-cqz" secondAttribute="leading" id="eKf-vK-LuR"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Q9w-CJ-b81" secondAttribute="bottom" constant="20" id="g1A-t9-VZU"/>
+                            <constraint firstItem="8xu-tR-Xqf" firstAttribute="bottom" secondItem="Q9w-CJ-b81" secondAttribute="bottom" priority="250" id="l22-fo-Ooo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8xu-tR-Xqf"/>
+                        <connections>
+                            <outlet property="closeButton" destination="EqC-L1-SGP" id="R2U-wO-EGs"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9m-ZJ-T0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="72.413793103448285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="37" height="48"/>
+        <image name="Close" width="28" height="28"/>
+        <image name="image" width="276" height="245"/>
+    </resources>
+</document>

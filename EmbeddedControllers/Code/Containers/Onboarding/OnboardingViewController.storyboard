@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GJe-cq-kno">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="9FO-fb-cuk">
+            <objects>
+                <viewController id="GJe-cq-kno" customClass="OnboardingViewController" customModule="DodoPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDS-bE-MRS" customClass="OnboardingView" customModule="DodoPizza" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiG-NO-Zbv">
+                                <rect key="frame" x="16" y="0.0" width="343" height="591"/>
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="410" translatesAutoresizingMaskIntoConstraints="NO" id="ueC-Wf-9QY">
+                                        <rect key="frame" x="0.0" y="90.5" width="343" height="410"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ueC-Wf-9QY" firstAttribute="centerX" secondItem="QiG-NO-Zbv" secondAttribute="centerXWithinMargins" id="PjP-nE-Rmg"/>
+                                    <constraint firstItem="ueC-Wf-9QY" firstAttribute="centerY" secondItem="QiG-NO-Zbv" secondAttribute="centerY" id="Usm-IN-MOr"/>
+                                    <constraint firstAttribute="leading" secondItem="ueC-Wf-9QY" secondAttribute="leading" id="Vw4-xS-3eY"/>
+                                    <constraint firstItem="ueC-Wf-9QY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QiG-NO-Zbv" secondAttribute="top" constant="20" id="meS-dA-5O2"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="48" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="PvP-1L-8Jk">
+                                <rect key="frame" x="16" y="599" width="343" height="48"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QiG-NO-Zbv" firstAttribute="centerX" secondItem="xDS-bE-MRS" secondAttribute="centerXWithinMargins" id="05a-C9-gO8"/>
+                            <constraint firstItem="PvP-1L-8Jk" firstAttribute="leading" secondItem="QiG-NO-Zbv" secondAttribute="leading" id="6Md-bu-Txq"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PvP-1L-8Jk" secondAttribute="bottom" constant="20" id="7pb-gu-A5j"/>
+                            <constraint firstItem="PvP-1L-8Jk" firstAttribute="centerX" secondItem="QiG-NO-Zbv" secondAttribute="centerX" id="8dq-rM-XMr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="QiG-NO-Zbv" secondAttribute="leading" id="UmE-hP-URk"/>
+                            <constraint firstItem="90w-Pp-qcy" firstAttribute="bottom" secondItem="PvP-1L-8Jk" secondAttribute="bottom" priority="750" id="ddV-48-0jb"/>
+                            <constraint firstItem="QiG-NO-Zbv" firstAttribute="top" secondItem="xDS-bE-MRS" secondAttribute="top" id="gof-cw-y9b"/>
+                            <constraint firstItem="PvP-1L-8Jk" firstAttribute="top" secondItem="QiG-NO-Zbv" secondAttribute="bottom" constant="8" id="sVk-yp-B8E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="90w-Pp-qcy"/>
+                        <connections>
+                            <outlet property="contentContainerView" destination="ueC-Wf-9QY" id="keZ-QH-lNm"/>
+                            <outlet property="stackView" destination="PvP-1L-8Jk" id="4si-JS-Okl"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrQ-W6-u9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="-319"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MJt-Oi-BpP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Year Content View Controller-->
+        <scene sceneID="Hrh-8j-JYH">
+            <objects>
+                <viewController id="MJt-Oi-BpP" customClass="NewYearContentViewController" customModule="EmbeddedControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T3G-e4-rIw" customClass="NewYearContentView" customModule="EmbeddedControllers" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="Xxz-PP-YmA">
+                                <rect key="frame" x="22" y="0.0" width="276" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Короткий день в Новый год" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxH-X6-c0J">
+                                <rect key="frame" x="45.5" y="245" width="229.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 декабря работаем до 18:00. Наши ребята тоже отмечают Новый год!  Продолжим радовать вас пиццей 1 января в 12:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFe-zU-H8b">
+                                <rect key="frame" x="0.0" y="269.5" width="320" height="130.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IxH-X6-c0J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T3G-e4-rIw" secondAttribute="leadingMargin" id="8fP-G1-Tb6"/>
+                            <constraint firstItem="IxH-X6-c0J" firstAttribute="top" secondItem="Xxz-PP-YmA" secondAttribute="bottom" constant="20" id="AYm-AW-ZFi"/>
+                            <constraint firstAttribute="bottom" secondItem="DFe-zU-H8b" secondAttribute="bottom" id="Bvf-TS-bIz"/>
+                            <constraint firstItem="DFe-zU-H8b" firstAttribute="top" secondItem="IxH-X6-c0J" secondAttribute="bottom" constant="4" id="Fp0-OT-s7v"/>
+                            <constraint firstItem="DFe-zU-H8b" firstAttribute="centerX" secondItem="IxH-X6-c0J" secondAttribute="centerX" id="Iay-QM-Red"/>
+                            <constraint firstItem="Xxz-PP-YmA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T3G-e4-rIw" secondAttribute="leading" id="MFk-fz-x4G"/>
+                            <constraint firstItem="DFe-zU-H8b" firstAttribute="leading" secondItem="T3G-e4-rIw" secondAttribute="leading" id="ecA-NS-BFO"/>
+                            <constraint firstItem="Xxz-PP-YmA" firstAttribute="centerX" secondItem="T3G-e4-rIw" secondAttribute="centerXWithinMargins" id="jdq-BF-iu3"/>
+                            <constraint firstItem="Xxz-PP-YmA" firstAttribute="top" secondItem="T3G-e4-rIw" secondAttribute="topMargin" id="vud-eH-7DO"/>
+                            <constraint firstItem="IxH-X6-c0J" firstAttribute="centerX" secondItem="Xxz-PP-YmA" secondAttribute="centerX" id="xEz-fY-reO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xOB-EZ-3Ly"/>
+                        <connections>
+                            <outlet property="bodyLabel" destination="DFe-zU-H8b" id="kCi-Dt-jSa"/>
+                            <outlet property="doneButton" destination="uBG-BP-lJA" id="3Aq-mO-gJc"/>
+                            <outlet property="imageView" destination="Xxz-PP-YmA" id="Nys-ud-EaC"/>
+                            <outlet property="titleLabel" destination="IxH-X6-c0J" id="mSa-ha-xVe"/>
+                        </connections>
+                    </view>
+                    <size key="freeformSize" width="320" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlX-78-RvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-BP-lJA" customClass="GradientButton" customModule="EmbeddedControllers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="GDu-sI-fHs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <state key="normal" title="Ага, понятно" backgroundImage="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonDidPress:" destination="MJt-Oi-BpP" eventType="touchUpInside" id="rHQ-vB-4Yu"/>
+                    </connections>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="873" y="-434"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="37" height="48"/>
+        <image name="image" width="276" height="245"/>
+    </resources>
+</document>

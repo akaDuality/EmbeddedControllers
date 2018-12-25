@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ies-pt-rAc">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modal Container View Controller-->
+        <scene sceneID="uhv-54-ufj">
+            <objects>
+                <viewController id="Ies-pt-rAc" customClass="ModalContainerViewController" customModule="EmbeddedControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xQQ-Hr-VhJ" customClass="ModalContainerView" customModule="EmbeddedControllers" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyN-hc-oZB">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                <accessibility key="accessibilityConfiguration" label="Закрыть"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="TB7-kf-LuF"/>
+                                    <constraint firstAttribute="width" secondItem="jyN-hc-oZB" secondAttribute="height" multiplier="1:1" id="e6r-Mo-OL2"/>
+                                </constraints>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="closeDidPress:" destination="Ies-pt-rAc" eventType="touchUpInside" id="0dk-fL-C7U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jyN-hc-oZB" firstAttribute="leading" secondItem="xQQ-Hr-VhJ" secondAttribute="leading" id="mQd-Ak-qMm"/>
+                            <constraint firstItem="jyN-hc-oZB" firstAttribute="top" secondItem="xQQ-Hr-VhJ" secondAttribute="top" id="sCR-QZ-fb7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4pm-aK-RqA"/>
+                        <connections>
+                            <outlet property="closeButton" destination="jyN-hc-oZB" id="ZXV-fE-U7w"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYs-hZ-1Pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="73.891625615763544"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Close" width="28" height="28"/>
+    </resources>
+</document>
