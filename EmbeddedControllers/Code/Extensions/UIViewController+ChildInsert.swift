@@ -9,8 +9,8 @@
 import UIKit
 
 extension UIViewController {
-    func insertAsChildControllerFullscreen(_ childController: UIViewController,
-                                           toView: UIView? = nil, index: Int) {
+    func insertFullframeChildController(_ childController: UIViewController,
+                                        toView: UIView? = nil, index: Int) {
         
         let containerView: UIView = toView ?? view
         

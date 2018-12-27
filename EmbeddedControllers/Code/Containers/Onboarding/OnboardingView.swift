@@ -15,7 +15,7 @@ class OnboardingView: UIView {
     
     var supportingViews: [UIView] = [] {
         didSet {
-            supportingViews.forEach { [unowned self] (view) in
+            for view in supportingViews {
                 self.stackView.addArrangedSubview(view)
             }
         }

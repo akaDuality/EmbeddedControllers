@@ -23,7 +23,6 @@ class NewYearContentViewController: UIViewController, ViewSpecificController, St
 
 extension NewYearContentViewController: OnboardingViewControllerDatasource {
     var supportingViews: [UIView] {
-
         return [view().doneButton]
     }
 }

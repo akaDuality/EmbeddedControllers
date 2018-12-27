@@ -18,15 +18,15 @@ class OnboardingViewController: UIViewController, Storyboardable, ViewSpecificCo
     public func embedController(_ controller: UIViewController,
                                 actionsDatasource: OnboardingViewControllerDatasource) {
         
-        self.insertAsChildControllerFullscreen(controller,
-                                               toView: self.view().contentContainerView,
-                                               index: 0)
-        self.view().supportingViews = actionsDatasource.supportingViews
+        insertFullframeChildController(controller,
+                                       toView: view().contentContainerView,
+                                       index: 0)
+        view().supportingViews = actionsDatasource.supportingViews
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let buttonsDatasource  = segue.destination as? OnboardingViewControllerDatasource {
-            self.view().supportingViews = buttonsDatasource.supportingViews
+            view().supportingViews = buttonsDatasource.supportingViews
         }
     }
 }

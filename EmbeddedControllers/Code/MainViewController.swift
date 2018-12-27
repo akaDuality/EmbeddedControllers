@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     @IBAction func showModalControllerDidPress(_ sender: UIButton) {
         
         let contentController = NewYearContentViewController.instantiateInitialFromStoryboard()
+        // Здесь можно настроить контроллер
         
         let onboardingController = OnboardingViewController.instantiateInitialFromStoryboard()
         onboardingController.embedController(contentController,

@@ -12,7 +12,7 @@ class ModalContainerViewController: UIViewController, Storyboardable, ViewSpecif
     typealias RootView = ModalContainerView
     
     public func embedController(_ controller: UIViewController) {
-        insertAsChildControllerFullscreen(controller, index: 0)
+        insertFullframeChildController(controller, index: 0)
     }
 
     public override var prefersStatusBarHidden: Bool {
